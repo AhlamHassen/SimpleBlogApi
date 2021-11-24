@@ -23,8 +23,8 @@ namespace SimpleBlogApiTests
             Assert.Equal(expected, testPost.Title);
             Assert.Equal(expected.Length, testPost.Title.Length);
         }
-    }
-     [Theory]
+        
+        [Theory]
         [InlineData("ee2bb24a-a272-4e3a-829f-19eb8a61a424", true)]
         [InlineData("64a51443-13e3-4377-b565-b1f1e39c73b0", true)]
         [InlineData("63ae9b96-e842-471d-aef3-bfbddebc19e8", true)]
@@ -40,4 +40,6 @@ namespace SimpleBlogApiTests
               Assert.NotEqual(input, testPost.Id);
            }
         }
+    }
+     
 }
